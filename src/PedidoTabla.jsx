@@ -4,7 +4,7 @@ const PedidoTabla = () => {
     const [pedidos, setPedidos] = useState([]);
 
     const cargarPedidos = async () => {
-        const response = await fetch('pedidos-back-mu.vercel.app/api/ventas');
+        const response = await fetch('https://pedidos-back-mu.vercel.app/api/ventas');
         const data = await response.json();
         setPedidos(data);
     };
